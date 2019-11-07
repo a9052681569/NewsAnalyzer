@@ -1,0 +1,21 @@
+.author__avatar {
+    min-width: 464px;
+    min-height: 464px;
+    background-image: url(../../../images/avatar.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 1000px) {
+    .author__avatar {
+        min-width: 232px;
+        min-height: 232px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .author__avatar {
+        min-width: 272px;
+        min-height: 272px;
+    }
+}

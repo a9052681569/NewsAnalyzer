@@ -1,0 +1,10 @@
+@import url(./__info/search__info.css);
+@import url(./__bar/search__bar.css);
+@import url(./__result/search__result.css);
+
+.search {
+    background: url(../../images/georgia-de-lotz-UsJoNxLaNo-unsplash.png) no-repeat center;
+    background-size: cover;
+    color: #fff;
+    padding: 0 0 5% 0;
+}

@@ -1,0 +1,16 @@
+@import url(./__avatar/author__avatar.css);
+@import url(./__container/author__container.css);
+
+.author {
+    display: flex;
+    align-items: center;
+    padding: 5% 5%;
+    max-width: 1250px;
+    margin: auto;
+}
+@media screen and (max-width: 500px) {
+    .author {
+        flex-wrap: wrap;
+        padding: 7.5% 5%;
+    }
+}

@@ -1,0 +1,8 @@
+.table__cell {
+    margin-top: 44px;
+}
+@media screen and (max-width: 500px) {
+    .table__cell {
+        margin-top: 24px;
+    }
+}

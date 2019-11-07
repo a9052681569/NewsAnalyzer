@@ -1,0 +1,15 @@
+@import url(./__img/swiper__header__link__img.css);
+
+@media screen and (max-width: 500px) {
+    .swiper__header__link {
+        position: absolute;
+        bottom: 5%;
+        width: 90%;
+        height: 56px;
+        border: 1px solid #1A1B22;
+        border-radius: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

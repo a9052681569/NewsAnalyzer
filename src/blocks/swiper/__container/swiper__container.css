@@ -1,0 +1,11 @@
+@import url(./__slide/swiper__slide.css);
+.swiper-container {
+    width: 100%;
+    cursor: pointer;
+}
+@media screen and (max-width: 1000px) {
+    .swiper-container {
+        width: 90%;
+        padding: 0 5%;
+    }
+}

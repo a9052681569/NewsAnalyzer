@@ -1,0 +1,13 @@
+@import url(./__table/diagram__table.css);
+@import url(./__title/diagram__title.css);
+
+.analytics__diagram__container {
+    margin: auto;
+    padding: 5% 5% 5% 5%;
+    max-width: 1250px;
+}
+@media screen and (max-width: 500px) {
+    .analytics__diagram__container {
+        padding: 10% 5% 10% 5%;
+    }
+}

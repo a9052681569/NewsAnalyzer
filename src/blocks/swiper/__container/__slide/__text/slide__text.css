@@ -1,0 +1,4 @@
+.slide__text {
+    overflow: hidden;
+    max-height: 50%;
+}

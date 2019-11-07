@@ -1,0 +1,17 @@
+@import url(./__img/slide__about__img.css);
+@import url(./__subtitle/slide__about__subtitle.css);
+@import url(./__title/slide__about__title.css);
+
+.slide__about {
+    display: grid;
+    grid-template-columns: 64px auto;
+    grid-template-rows: auto auto;
+    padding: 16px 0;
+    column-gap: 16px;
+}
+@media screen and (max-width: 1000px) {
+    .slide__about {
+        grid-template-columns: 46px auto;
+        column-gap: 12px;
+    }
+}

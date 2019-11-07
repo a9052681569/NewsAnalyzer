@@ -1,0 +1,17 @@
+@import url(./__text/way__text.css);
+
+
+.info__way {
+    display: flex;
+    margin-bottom: 80px;
+}
+@media screen and (max-width: 1000px) {
+    .info__way {
+        margin-bottom: 64px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .info__way {
+        display: none;
+    }
+}

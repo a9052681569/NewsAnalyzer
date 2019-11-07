@@ -1,0 +1,14 @@
+@import url(./__text/news-card__text.css);
+@import url(./__title/news-card__title.css);
+
+.description__container {
+    height: 194px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 1000px) {
+    .description__container {
+        height: 160px;
+    }
+}

@@ -1,0 +1,6 @@
+@import url(./__bar/chart-list__bar.css);
+@import url(./__cell/chart-list__cell.css);
+
+.table__chart-list {
+    position: relative;   
+}

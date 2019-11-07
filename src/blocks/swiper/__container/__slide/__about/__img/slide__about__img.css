@@ -1,0 +1,15 @@
+.slide__about__img {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    width: 64px;
+    height: 64px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media screen and (max-width: 1000px) {
+    .slide__about__img {
+        width: 46px;
+        height: 46px;
+    }
+}
