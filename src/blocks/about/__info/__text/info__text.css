@@ -1,0 +1,5 @@
+@import url(./__paragraph/info__text__paragraph.css);
+
+.info__text {
+    max-width: 815px;
+}

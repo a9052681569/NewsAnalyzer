@@ -1,0 +1,12 @@
+@import url(./__stack/tech__stack.css);
+@import url(./__title/tech__title.css);
+
+.tech__container {
+    padding: 5% 5%;
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: baseline;
+}

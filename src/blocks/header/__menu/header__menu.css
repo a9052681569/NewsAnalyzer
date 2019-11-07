@@ -1,0 +1,7 @@
+@import url(./__item/header__menu__item.css);
+
+.header__menu {
+    display: flex;
+    align-items: flex-end;
+    font-family: 'Roboto';
+}

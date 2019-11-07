@@ -1,0 +1,21 @@
+@import url(./__input/bar__input.css);
+
+.bar__input-container {
+    border-radius: 100px;
+    background-color: #fff;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    width: 288px;
+}
+
+@media screen and (max-width: 1000px) {
+    .bar__input-container {
+        height: 56px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .bar__input-container {
+        width: 100%;
+    }
+}

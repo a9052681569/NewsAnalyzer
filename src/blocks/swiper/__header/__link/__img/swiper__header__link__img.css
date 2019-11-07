@@ -1,0 +1,5 @@
+@media screen and (max-width: 500px) {
+    .swiper__header__link__img {
+        display: none;
+    }
+}

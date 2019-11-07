@@ -1,0 +1,4 @@
+.section__side-rect_right {
+    right: 0;
+    transform: rotate(180deg);
+}

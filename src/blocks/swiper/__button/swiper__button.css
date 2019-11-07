@@ -1,0 +1,22 @@
+@import url(./_next/swiper__button_next.css);
+@import url(./_prev/swiper__button_prev.css);
+
+.swiper__button {
+    background-image: url(../../../images/arrow_white.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 8px 13px;
+    background-color: #1A1B22;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0px 3px 10px rgba(14, 26, 57, 0.2);
+}
+.swiper__button::after {
+    content: none;
+}
+@media screen and (max-width: 1000px) {
+    .swiper__button {
+        display: none;
+    }
+}

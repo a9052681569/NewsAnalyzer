@@ -1,0 +1,7 @@
+@import url(./__date/news-card__date.css);
+@import url(./__source/news-card__source.css);
+@import url(./__container/description__container.css);
+
+.news-card__description {
+  padding: 24px;
+}

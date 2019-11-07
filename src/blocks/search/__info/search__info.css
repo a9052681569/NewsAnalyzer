@@ -1,0 +1,14 @@
+@import url(./__subtitle/info__subtitle.css);
+@import url(./__title/info__title.css);
+
+.search__info {
+    max-width: 600px;
+    margin: auto;
+    padding: 0 5%;
+}
+
+@media screen and (max-width: 1000px) {
+    .search__info {
+        max-width: 450px;
+    }
+}

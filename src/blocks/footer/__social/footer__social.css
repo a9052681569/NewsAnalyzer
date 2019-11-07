@@ -1,0 +1,5 @@
+@import url(./__icon/social__icon.css);
+
+.footer__social {
+    display: flex;
+}

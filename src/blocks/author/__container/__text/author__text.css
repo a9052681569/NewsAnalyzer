@@ -1,0 +1,23 @@
+.author__text {
+    max-width: 600px;
+    margin-top: 24px;
+}
+@media screen and (max-width: 1250px) {
+    .author__text {
+        max-width: 380px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .author__text {
+        max-width: 424px;
+    }
+    .author__text:last-of-type {
+        margin-top: 0;
+    }
+}
+@media screen and (max-width: 500px) {
+    .author__text {
+        margin-top: 16px;
+    }
+}

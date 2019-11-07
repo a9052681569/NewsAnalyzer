@@ -1,0 +1,25 @@
+@import url(./__button/bar__button.css);
+@import url(./__input-container/bar__input-container.css);
+
+.search__bar {
+    margin-top: 64px;
+    max-width: 600px;
+    border-radius: 100px;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1000px) {
+    .search__bar {
+        margin-top: 24px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .search__bar {
+        background-color: transparent;
+        margin-top: 64px;
+    }
+}

@@ -1,0 +1,14 @@
+@import url(./__img/link__img.css);
+
+.header__link {
+    display: flex;
+    height: 24px;
+    align-items: baseline;
+    text-decoration: none;
+    font-weight: bold;
+}
+@media screen and (max-width: 623px) {
+    .header__link {
+        margin-top: 16px;
+    }
+}

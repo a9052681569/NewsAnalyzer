@@ -1,0 +1,7 @@
+@import url(./__text/info__text.css);
+
+.about__info {
+    padding: 5% 5%;
+    max-width: 1250px;
+    margin: auto;
+}

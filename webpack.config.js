@@ -7,10 +7,14 @@ const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const isDev = process.env.NODE_ENV === 'development';
 
 module.exports = {
-    entry: { main: './src/index.js' },
+    entry: { 
+        main: './src/js/index.js',
+        about: './src/js/about.js',
+        analytics: './src/js/analytics.js'
+    },
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: '[name].[chunkhash].js'
+        filename: 'js/[name].[chunkhash].js'
     },
     module: {
         rules: [{ // тут описываются правила
@@ -21,19 +25,22 @@ module.exports = {
             {
             test: /\.css$/, // применять это правило только к CSS-файлам
             use: [
-                (isDev ? 'style-loader' : MiniCssExtractPlugin.loader),
+                {
+                    loader: isDev ? 'style-loader' : MiniCssExtractPlugin.loader,
+                    options: isDev ? '' : {publicPath: '../'}
+                },
                 'css-loader', 
                 'postcss-loader'
             ] // к этим файлам нужно применить пакеты, которые мы уже установили
             },
             {
                 test: /\.(eot|ttf|woff|woff2)$/,
-                loader: 'file-loader?name=./vendor/[name].[ext]'
+                loader: 'file-loader?name=vendor/[name].[ext]'
             },
             {
                 test: /\.(png|jpg|gif|ico|svg)$/,
                 use: [
-                     'file-loader?name=./images/[name].[ext]', // указали папку, куда складывать изображения
+                     'file-loader?name=images/[name].[ext]', // указали папку, куда складывать изображения
                      {
                          loader: 'image-webpack-loader',
                          options: {}
@@ -43,7 +50,9 @@ module.exports = {
         ]
     },
     plugins: [ 
-        new MiniCssExtractPlugin({filename: 'style.[contenthash].css'}),
+        new MiniCssExtractPlugin({
+            filename: 'css/[name].[contenthash].css',
+        }),
         new OptimizeCssAssetsPlugin({
             assetNameRegExp: /\.css$/g,
             cssProcessor: require('cssnano'),
@@ -57,7 +66,24 @@ module.exports = {
             inject: false, // стили НЕ нужно прописывать внутри тегов
             hash: true, // для страницы нужно считать хеш
             template: './src/index.html', // откуда брать образец для сравнения с текущим видом проекта
-            filename: 'index.html' // имя выходного файла, то есть того, что окажется в папке dist после сборки
+            filename: 'index.html', // имя выходного файла, то есть того, что окажется в папке dist после сборки
+            chunks: '[name]' 
+        }),
+        new HtmlWebpackPlugin({
+            // Означает, что:
+            inject: false, // стили НЕ нужно прописывать внутри тегов
+            hash: true, // для страницы нужно считать хеш
+            template: './src/about.html', // откуда брать образец для сравнения с текущим видом проекта
+            filename: 'about.html', // имя выходного файла, то есть того, что окажется в папке dist после сборки
+            chunks: '[name]',
+        }),
+        new HtmlWebpackPlugin({
+            // Означает, что:
+            inject: false, // стили НЕ нужно прописывать внутри тегов
+            hash: true, // для страницы нужно считать хеш
+            template: './src/analytics.html', // откуда брать образец для сравнения с текущим видом проекта
+            filename: 'analytics.html', // имя выходного файла, то есть того, что окажется в папке dist после сборки
+            chunks: '[name]',
         }),
         new WebpackMd5Hash(),
         new webpack.DefinePlugin({

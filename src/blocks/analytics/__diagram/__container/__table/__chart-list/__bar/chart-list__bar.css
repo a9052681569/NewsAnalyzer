@@ -1,0 +1,15 @@
+@import url(./__value/bar__value.css);
+@import url(./_bottom/chart-list__bar_bottom.css);
+@import url(./_top/chart-list__bar_top.css);
+
+.chart-list__bar {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+@media screen and (max-width: 500px) {
+    .chart-list__bar {
+        display: none;
+    }
+}

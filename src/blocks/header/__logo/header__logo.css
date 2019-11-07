@@ -1,0 +1,6 @@
+@import url(./__text/logo__text.css);
+
+.header__logo {
+    text-decoration: none;
+    display: flex;
+}

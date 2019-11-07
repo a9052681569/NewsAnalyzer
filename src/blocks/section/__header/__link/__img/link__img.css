@@ -1,0 +1,6 @@
+.link__img {
+    height: 13px;
+    width: 8px;
+    margin-left: 10px;
+    background-image: url(../../../../../images/arrow.svg);
+}
