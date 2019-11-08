@@ -6,6 +6,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 50%;
 }
 @media screen and (max-width: 1000px) {
     .slide__about__img {
