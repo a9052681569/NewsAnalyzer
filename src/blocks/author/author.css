@@ -4,9 +4,6 @@
 .author {
     display: flex;
     align-items: center;
-    padding: 5% 5%;
-    max-width: 1250px;
-    margin: auto;
 }
 @media screen and (max-width: 500px) {
     .author {

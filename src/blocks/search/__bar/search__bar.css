@@ -1,5 +1,5 @@
-@import url(./__button/bar__button.css);
-@import url(./__input-container/bar__input-container.css);
+@import url(./-button/search__bar-button.css);
+@import url(./-input-container/search__bar-input-container.css);
 
 .search__bar {
     margin-top: 64px;

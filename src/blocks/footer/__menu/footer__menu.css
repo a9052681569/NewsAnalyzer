@@ -1,4 +1,4 @@
-@import url(./__item/menu__item.css);
+@import url(./-item/footer__menu-item.css);
 
 .footer__menu {
     display: flex;

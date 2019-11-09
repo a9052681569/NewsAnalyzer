@@ -1,0 +1,15 @@
+@import url(./__value/diagram__bar-value.css);
+@import url(./_bottom/diagram__bar_bottom.css);
+@import url(./_top/diagram__bar_top.css);
+
+.diagram__bar {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+@media screen and (max-width: 500px) {
+    .diagram__bar {
+        display: none;
+    }
+}

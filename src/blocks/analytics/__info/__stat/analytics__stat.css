@@ -1,0 +1,7 @@
+.analytics__stat {
+    margin-bottom: 4px;
+    display: flex;
+}
+.analytics__stat:last-of-type {
+    margin-bottom: 0;
+}

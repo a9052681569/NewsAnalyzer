@@ -1,0 +1,8 @@
+.analytics__title {
+    margin-bottom: 24px;
+}
+@media screen and (max-width: 500px) {
+    .analytics__title {
+        margin-bottom: 16px;
+    }
+}
