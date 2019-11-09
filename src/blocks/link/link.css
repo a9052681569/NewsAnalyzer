@@ -5,4 +5,9 @@
     align-items: baseline;
     text-decoration: none;
     font-weight: bold;
+    transition: opacity ease .4s;
+}
+
+.link:hover {
+    opacity: .5;
 }

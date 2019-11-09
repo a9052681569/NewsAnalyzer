@@ -1,9 +1,13 @@
 .footer__menu-item {
     margin-left: 48px;
     text-decoration: none;
+    transition: opacity ease .4s;
 }
 .footer__menu-item:first-of-type {
     margin-left: 0;
+}
+.footer__menu-item:hover {
+    opacity: .5;
 }
 
 @media screen and (max-width: 1000px) {

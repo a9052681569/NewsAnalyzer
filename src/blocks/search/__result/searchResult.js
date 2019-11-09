@@ -4,7 +4,8 @@ import resSuccess from './__success/searchSuccess';
 const preloader = new Preloader(document.querySelector('.search__result'));
 let res = true;
 // после клика по кнопке поиска отрисовываем нужные результаты
-export default document.querySelector('.search__bar-button').addEventListener('click', () => {
+export default document.forms.search.addEventListener('submit', (event) => {
+    event.preventDefault();
     // вместо res будет запрос на сервер, если он успешен - отрисовываем результаты
     if (res) {
         preloader.preload();

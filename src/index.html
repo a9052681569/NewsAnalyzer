@@ -25,15 +25,15 @@
             <div class="search__info section">
                 <h1 class="search__info-title">Что в мире творится?</h1>
                 <p class="search__info-subtitle">Введите в поиске любую тему и узнайте, насколько популярной она была в носотях за прошедшую неделю.</p>
-                <div class="search__bar">
+                <form class="search__bar" name="search">
                     <div class="search__bar-input-container">
-                        <input type="text" class="search__bar-input"placeholder="Введите тему новости">
+                        <input type="text" class="search__bar-input" placeholder="Введите тему новости" required>
                     </div>
                     <button class="search__bar-button">Искать</button>
-                </div>
+                </form>
             </div>
         </section>
-        <section class="search__result hidden"></section>
+        <div class="search__result hidden"></div>
         <section class="author section">
             <div class="author__avatar"></div>
             <div class="author__container">
@@ -52,8 +52,8 @@
             <a target="blank" class="footer__menu-item main-text" href="https://praktikum.yandex.ru/">Яндекс.Практикум</a>
         </div>
         <div class="footer__social">
-            <a href="https://github.com/a9052681569" target="blank"><img class="footer__social-icon" src="<%=require('./images/github.png')%>" alt=""></a>
-            <a href="https://www.facebook.com/" target="blank"><img class="footer__social-icon" src="<%=require('./images/fb.png')%>" alt=""></a>
+            <a href="https://github.com/a9052681569" target="blank"><img class="footer__social-icon" src="<%=require('./images/github.png')%>" alt="github logo"></a>
+            <a href="https://www.facebook.com/" target="blank"><img class="footer__social-icon" src="<%=require('./images/fb.png')%>" alt="facebook logo"></a>
         </div>
     </footer> 
     <script type="module" src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
