@@ -1,0 +1,23 @@
+@import url(./news-card/news-card.css);
+
+.cardlist {
+    padding: 5% 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 400px);
+    gap: 16px;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1000px) {
+    .cardlist {
+        grid-template-columns: repeat(auto-fill, 224px);
+        gap: 8px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .cardlist {
+        grid-template-columns: repeat(auto-fill, 288px);
+        padding: 10% 0 5% 0;
+    }
+}

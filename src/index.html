@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,27 +14,27 @@
             <header class="header">
                 <div class="header__container">
                     <a href="./index.html" class="header__logo">
-                        <p class="logo__text">NewsAnalyzer</p>
+                        <p class="header__logo-text">NewsAnalyzer</p>
                     </a>
                     <div class="header__menu">
-                        <a href="./index.html" class="header__menu__item">Главная</a>
-                        <a href="./about.html" class="header__menu__item">О проекте</a>
+                        <a href="./index.html" class="header__menu-item">Главная</a>
+                        <a href="./about.html" class="header__menu-item">О проекте</a>
                     </div>
                 </div>
             </header>
-            <div class="search__info">
-                <h1 class="info__title">Что в мире творится?</h1>
-                <p class="info__subtitle">Введите в поиске любую тему и узнайте, насколько популярной она была в носотях за прошедшую неделю.</p>
+            <div class="search__info section">
+                <h1 class="search__info-title">Что в мире творится?</h1>
+                <p class="search__info-subtitle">Введите в поиске любую тему и узнайте, насколько популярной она была в носотях за прошедшую неделю.</p>
                 <div class="search__bar">
-                    <div class="bar__input-container">
-                        <input type="text" class="bar__input" name="" id="" placeholder="Введите тему новости">
+                    <div class="search__bar-input-container">
+                        <input type="text" class="search__bar-input"placeholder="Введите тему новости">
                     </div>
-                    <button class="bar__button">Искать</button>
+                    <button class="search__bar-button">Искать</button>
                 </div>
             </div>
         </section>
         <section class="search__result hidden"></section>
-        <section class="author">
+        <section class="author section">
             <div class="author__avatar"></div>
             <div class="author__container">
                 <h2 class="h2-text author__title">Об авторе</h2>
@@ -47,16 +47,15 @@
     <footer class="footer">
         <p class="footer__copyright card-text">© 2019  Supersite</p>
         <div class="footer__menu">
-            <a target="blank" class="menu__item main-text" href="./index.html">Главная</a>
-            <a target="blank" class="menu__item main-text" href="./about.html">О проекте</a>
-            <a target="blank" class="menu__item main-text" href="https://praktikum.yandex.ru/">Яндекс.Практикум</a>
+            <a target="blank" class="footer__menu-item main-text" href="./index.html">Главная</a>
+            <a target="blank" class="footer__menu-item main-text" href="./about.html">О проекте</a>
+            <a target="blank" class="footer__menu-item main-text" href="https://praktikum.yandex.ru/">Яндекс.Практикум</a>
         </div>
         <div class="footer__social">
-            <a href="https://github.com/a9052681569" target="blank"><img class="social__icon" src="<%=require('./images/github.png')%>" alt=""></a>
-            <a href="https://www.facebook.com/" target="blank"><img class="social__icon" src="<%=require('./images/fb.png')%>" alt=""></a>
+            <a href="https://github.com/a9052681569" target="blank"><img class="footer__social-icon" src="<%=require('./images/github.png')%>" alt=""></a>
+            <a href="https://www.facebook.com/" target="blank"><img class="footer__social-icon" src="<%=require('./images/fb.png')%>" alt=""></a>
         </div>
-    </footer>
-    
+    </footer> 
     <script type="module" src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
 </body>
 </html>

@@ -2,5 +2,9 @@
 @import url(../blocks/fonts/fonts.css);
 @import url(../blocks/header/header.css);
 @import url(../blocks/footer/footer.css);
+@import url(../blocks/way/way.css);
+@import url(../blocks/section/section.css);
 @import url(../blocks/analytics/__info/analytics__info.css);
-@import url(../blocks/analytics/__diagram/analytics__diagram.css);
+@import url(../blocks/diagram/diagram.css);
+@import url(../blocks/chart-list/chart-list.css);
+

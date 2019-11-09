@@ -1,5 +1,6 @@
 @import url(../section/__header/section__header.css);
 @import url(./__header/swiper__header.css);
+@import url(./__link/swiper__link.css);
 @import url(./__pagination/swiper__pagination.css);
 @import url(./__button/swiper__button.css);
 @import url(../section/__side-rect/section__side-rect.css);

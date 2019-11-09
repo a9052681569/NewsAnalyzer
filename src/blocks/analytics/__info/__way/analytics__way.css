@@ -1,0 +1,13 @@
+.analytics__way {
+    margin-bottom: 80px;
+}
+@media screen and (max-width: 1000px) {
+    .analytics__way {
+        margin-bottom: 64px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .analytics__way {
+        display: none;
+    }
+}

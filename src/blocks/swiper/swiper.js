@@ -1,7 +1,7 @@
 
 // подключаем плагин
 import Swiper from 'swiper';
-// подготовили прелоадер
+// подключаем прелоадер
 import Preloader from '../preloader/Preloader';
 // подключили класс, отрисовывающий слайды
 import Slide from './__container/__slide/swiper__slide';

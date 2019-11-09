@@ -1,0 +1,5 @@
+@import url(./__text/way__text.css);
+
+.way {
+    display: flex;
+}
