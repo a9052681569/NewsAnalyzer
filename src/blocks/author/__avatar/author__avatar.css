@@ -7,13 +7,32 @@
     border-radius: 50%;
 }
 
+@media screen and (max-width: 1250px) {
+    .author__avatar {
+        min-width: 365px;
+        min-height: 365px;
+    }
+}
+
 @media screen and (max-width: 1000px) {
     .author__avatar {
         min-width: 232px;
         min-height: 232px;
     }
 }
+@media screen and (max-width: 750px) {
+    .author__avatar {
+        min-width: 434px;
+        min-height: 434px;
+    }
+}
 @media screen and (max-width: 500px) {
+    .author__avatar {
+        min-width: 330px;
+        min-height: 330px;
+    }
+}
+@media screen and (max-width: 400px) {
     .author__avatar {
         min-width: 272px;
         min-height: 272px;

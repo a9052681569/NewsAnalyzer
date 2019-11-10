@@ -7,5 +7,4 @@
 @import url(../blocks/tech/tech.css);
 @import url(../blocks/author/author.css);
 @import url(../blocks/link/link.css);
-@import url(../../node_modules/swiper/css/swiper.css); /* подключаем стили плагина */
-@import url(../blocks/swiper/swiper.css);/* кастомизируем плагин */
+@import url(../blocks/swiper/swiper.css);

@@ -1,4 +1,5 @@
 @import url(../section/__header/section__header.css);
+@import url(../../../node_modules/swiper/css/swiper.css);
 @import url(./__header/swiper__header.css);
 @import url(./__link/swiper__link.css);
 @import url(./__pagination/swiper__pagination.css);

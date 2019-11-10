@@ -6,13 +6,19 @@
     top: -60px;
 }
 
+@media screen and (max-width: 1250px) {
+    .author__container {
+        top: 0;
+    }
+}
+
 @media screen and (max-width: 1000px) {
     .author__container {
         margin-left: 32px;
         top: 0;
     }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 750px) {
     .author__container {
         margin-left: 0;
         margin-top: 24px;

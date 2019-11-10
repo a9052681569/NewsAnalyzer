@@ -1,4 +1,9 @@
 .slide__text {
     overflow: hidden;
-    max-height: 50%;
+    height: 50%;
+}
+@media screen and (max-width: 1000px) {
+    .slide__text {
+        max-height: 40%;
+    }
 }

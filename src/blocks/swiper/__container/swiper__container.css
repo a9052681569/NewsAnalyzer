@@ -1,10 +1,13 @@
-@import url(./__slide/swiper__slide.css);
-.swiper-container {
+@import url(./__slide/slide.css);
+
+
+.swiper__container {
     width: 100%;
     cursor: pointer;
+    overflow: hidden;
 }
 @media screen and (max-width: 1000px) {
-    .swiper-container {
+    .swiper__container {
         width: 90%;
         padding: 0 5%;
     }

@@ -1,4 +1,4 @@
-.slide__about__img {
+.slide__about-img {
     grid-row-start: 1;
     grid-row-end: 3;
     width: 64px;
@@ -7,10 +7,4 @@
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 50%;
-}
-@media screen and (max-width: 1000px) {
-    .slide__about__img {
-        width: 46px;
-        height: 46px;
-    }
 }

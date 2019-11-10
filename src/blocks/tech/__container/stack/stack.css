@@ -13,6 +13,11 @@
         gap: 64px;
     }
 }
+@media screen and (max-width: 750px) {
+    .stack {
+        width: 340px;
+    }
+}
 @media screen and (max-width: 500px) {
     .stack {
         gap: 32px;

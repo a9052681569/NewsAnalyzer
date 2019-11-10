@@ -1,3 +1,4 @@
-.swiper-button-next {
+.swiper__button_next {
     transform: rotate(180deg);
+    right: 16px;
 }

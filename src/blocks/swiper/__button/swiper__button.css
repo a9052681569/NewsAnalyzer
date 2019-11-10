@@ -11,7 +11,15 @@
     width: 40px;
     height: 40px;
     box-shadow: 0px 3px 10px rgba(14, 26, 57, 0.2);
+    position: absolute;
+    top: 50%;
+    z-index: 10;
 }
+
+.swiper-button-disabled {
+    opacity: .5;
+}
+
 .swiper__button::after {
     content: none;
 }

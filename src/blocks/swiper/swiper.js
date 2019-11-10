@@ -1,20 +1,23 @@
 
 // подключаем плагин
-import Swiper from 'swiper';
+import { Swiper, Navigation, Pagination } from 'swiper/js/swiper.esm.js';
 // подключаем прелоадер
 import Preloader from '../preloader/Preloader';
 // подключили класс, отрисовывающий слайды
-import Slide from './__container/__slide/swiper__slide';
+import Slide from './__container/__slide/slide';
 // переменнная в будущем будет ответом сервера, переключает отображение слайдов или прелоадер
 let res = true;
 // инициируем работу слайдера
-const slider = new Swiper('.swiper-container', {
+Swiper.use([Navigation, Pagination]);
+
+const slider = new Swiper('.swiper__container', {
     pagination: {
-      el: '.swiper-pagination',
+      el: '.swiper__pagination',
+      clickable: true
     },
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.swiper__button_next',
+      prevEl: '.swiper__button_prev',
     },
     freeMode: true,
     slidesPerView: 'auto',
@@ -25,7 +28,7 @@ const cards = [
     {
         link: 'https://fanparty.ru/fanclubs/avatar-2009/gallery/85164_avatar_2009.jpg',
         date: '2 августа, 2019',
-        title: 'Национальное достояние – парки',
+        title: 'Сладкий пончик',
         text: 'В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.',
         subtitle: 'kzkzk.ру'
     },
