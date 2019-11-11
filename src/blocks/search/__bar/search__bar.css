@@ -7,7 +7,6 @@
     border-radius: 100px;
     background-color: #fff;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     
@@ -22,5 +21,6 @@
     .search__bar {
         background-color: transparent;
         margin-top: 64px;
+        flex-wrap: wrap;
     }
 }

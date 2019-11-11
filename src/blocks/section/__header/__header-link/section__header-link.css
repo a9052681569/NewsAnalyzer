@@ -1,7 +1,7 @@
 .section__header-link {
     height: 24px;
 }
-@media screen and (max-width: 623px) {
+@media screen and (max-width: 735px) {
     .section__header-link {
         margin-top: 16px;
     }

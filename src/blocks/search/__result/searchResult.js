@@ -2,7 +2,7 @@ import Preloader from '../../preloader/Preloader';
 import resSuccess from './__success/searchSuccess';
 
 const preloader = new Preloader(document.querySelector('.search__result'));
-let res = false;
+let res = true;
 // после клика по кнопке поиска отрисовываем нужные результаты
 export default document.forms.search.addEventListener('submit', (event) => {
     event.preventDefault();
