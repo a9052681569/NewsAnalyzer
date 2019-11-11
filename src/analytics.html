@@ -15,29 +15,29 @@
                 <p class="header__logo-text header__logo-text_black">NewsAnalyzer</p>
             </a>
             <div class="header__menu">
-                <a href="./index.html" class="header__menu-item header__menu-item_black">Главная</a>
-                <a href="./about.html" class="header__menu-item header__menu-item_black">О проекте</a>
+                <a href="./index.html" class="header__menu-item gray-text header__menu-item_black">Главная</a>
+                <a href="./about.html" class="header__menu-item gray-text header__menu-item_black">О проекте</a>
             </div>
         </div>
     </header>
-    <main class="main">
-        <section class="analytics__info section">
+    <main class="analytics main">
+        <section class="analytics__info section-container">
             <div class="analytics__way way">
                 <a href="./index.html" class="way__text main-text">Главная&#160;</a>
                 <a href="./analytics.html" class="way__text main-text gray-text">/ Аналитика</a>
             </div>
             <h2 class="h2-text analytics__title">Вы спросили: «Путешествия»</h2>
-            <div class="analytics__stat main-text">
-                <p class="analytics__stat-name">Новостей за неделю:&#160;</p>
-                <p class="analytics__stat-indicator bold-text">34 324</p>
+            <div class="analytics__stat stat main-text">
+                <p class="stat__name">Новостей за неделю:&#160;</p>
+                <p class="stat__value">34 324</p>
             </div>
-            <div class="analytics__stat main-text">
-                <p class="analytics__stat-name">Упоминаний в заголовках:&#160;</p>
-                <p class="analytics__stat-indicator bold-text">235</p>
+            <div class="analytics__stat stat main-text">
+                <p class="stat__name">Упоминаний в заголовках:&#160;</p>
+                <p class="stat__value">235</p>
             </div>
         </section>
-        <section class="section_bg_grey">
-            <div class="section">
+        <section class="section section_bg_grey">
+            <div class="section-container">
                 <h3 class="h3-text">Аналитика по дням</h3>
                 <div class="diagram">
                     <p class="diagram__column-name gray-text diagram-text">Дата <br> (август)</p>
@@ -93,15 +93,15 @@
         </section>
     </main>
     <footer class="footer">
-        <p class="footer__copyright card-text">© 2019  Supersite</p>
+        <p class="footer__copyright card-text gray-text">© 2019  Supersite</p>
         <div class="footer__menu">
             <a target="blank" class="footer__menu-item main-text" href="./index.html">Главная</a>
             <a target="blank" class="footer__menu-item main-text" href="./about.html">О проекте</a>
             <a target="blank" class="footer__menu-item main-text" href="https://praktikum.yandex.ru/">Яндекс.Практикум</a>
         </div>
         <div class="footer__social">
-            <a href="https://github.com/a9052681569" target="blank"><img class="footer__social-icon" src="<%=require('./images/github.png')%>" alt="github logo"></a>
-            <a href="https://www.facebook.com/" target="blank"><img class="footer__social-icon" src="<%=require('./images/fb.png')%>" alt="facebook logo"></a>
+            <a href="https://github.com/a9052681569" class="footer__social-icon" target="blank"><img src="<%=require('./images/github.png')%>" alt="github logo"></a>
+            <a href="https://www.facebook.com/" class="footer__social-icon" target="blank"><img src="<%=require('./images/fb.png')%>" alt="facebook logo"></a>
         </div>
     </footer>
     <script type="module" src="<%= htmlWebpackPlugin.files.chunks.analytics.entry %>"></script>

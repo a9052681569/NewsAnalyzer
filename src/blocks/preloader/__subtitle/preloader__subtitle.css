@@ -1,6 +1,5 @@
 .preloader__subtitle {
-    color: #B6BCBF;
     text-align: center;
-    width: 350px;
+    max-width: 350px;
     margin: 24px auto auto auto;
 }

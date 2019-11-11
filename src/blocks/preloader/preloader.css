@@ -1,17 +1,11 @@
-@import url(./__not-found/preloader__not-found.css);
+@import url(./__img/preloader__img.css);
 @import url(./__subtitle/preloader__subtitle.css);
 @import url(./__title/preloader__title.css);
 
 .preloader {
-	width: 74px;
-	height: 74px;
-    animation: spin .75s infinite linear;
-	background-image: url(../../images/Ellipse.png);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	margin: auto;
-}
-
-@keyframes spin {
-	100% {
-		transform: rotate(-360deg);
-	}
 }

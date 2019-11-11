@@ -4,7 +4,7 @@ import { Swiper, Navigation, Pagination } from 'swiper/js/swiper.esm.js';
 // подключаем прелоадер
 import Preloader from '../preloader/Preloader';
 // подключили класс, отрисовывающий слайды
-import Slide from './__container/__slide/slide';
+import Slide from './swiper-slide/swiper-slide';
 // переменнная в будущем будет ответом сервера, переключает отображение слайдов или прелоадер
 let res = true;
 // инициируем работу слайдера

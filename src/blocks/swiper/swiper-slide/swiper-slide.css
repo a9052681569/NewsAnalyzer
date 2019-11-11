@@ -1,6 +1,6 @@
-@import url(./__about/slide__about.css);
-@import url(./__date/slide__date.css);
-@import url(./__text/slide__text.css);
+@import url(./__about/swiper-slide__about.css);
+@import url(./__date/swiper-slide__date.css);
+@import url(./__text/swiper-slide__text.css);
 
 .swiper-slide {
     padding: 24px;

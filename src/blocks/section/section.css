@@ -1,7 +1,4 @@
 @import url(./_bg/_grey/section_bg_grey.css);
-
-.section {
-    padding: 5%;
-    max-width: 1250px;
-    margin: auto;
-}
+@import url(./__header/section__header.css);
+@import url(./__side-rect/section__side-rect.css);
+@import url(./section-container/section-container.css);
