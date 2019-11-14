@@ -1,0 +1,6 @@
+@import url(./_active-about/header__menu-item_active-about.css);
+
+.header__menu-item_active {
+    border-bottom-color: #FFF;
+    color: #fff;   
+}
