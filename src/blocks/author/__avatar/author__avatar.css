@@ -1,7 +1,6 @@
 .author__avatar {
-    min-width: 464px;
-    min-height: 464px;
-    background-image: url(../../../images/avatar.png);
+    width: 464px;
+    height: 464px;
     background-position: center;
     background-size: cover;
     border-radius: 50%;
@@ -9,32 +8,32 @@
 
 @media screen and (max-width: 1250px) {
     .author__avatar {
-        min-width: 365px;
-        min-height: 365px;
+        width: 365px;
+        height: 365px;
     }
 }
 
 @media screen and (max-width: 1000px) {
     .author__avatar {
-        min-width: 232px;
-        min-height: 232px;
+        width: 232px;
+        height: 232px;
     }
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 765px) {
     .author__avatar {
-        min-width: 350px;
-        min-height: 350px;
+        width: 350px;
+        height: 350px;
     }
 }
 @media screen and (max-width: 500px) {
     .author__avatar {
-        min-width: 330px;
-        min-height: 330px;
+        width: 330px;
+        height: 330px;
     }
 }
 @media screen and (max-width: 400px) {
     .author__avatar {
-        min-width: 272px;
-        min-height: 272px;
+        width: 272px;
+        height: 272px;
     }
 }

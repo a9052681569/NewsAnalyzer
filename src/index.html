@@ -44,7 +44,14 @@
             <p class="main-text preloader__subtitle gray-text">К сожалению по вашему запросу ничего не найдено.</p>
         </div>
         <section class="author section-container">
-            <div class="author__avatar"></div>
+            <picture>
+                <source srcset="<%=require('./images/fb.png')%>" media="(max-width: 400px)">
+                <source srcset="<%=require('./images/georgia-de-lotz-UsJoNxLaNo-unsplash.png')%>" media="(max-width: 500px)">
+                <source srcset="<%=require('./images/avatar.png')%>" media="(max-width: 765px)">
+                <source srcset="<%=require('./images/avatar.png')%>" media="(max-width: 1000px)">
+                <source srcset="<%=require('./images/github.png')%>" media="(max-width: 1250px)">
+                <img src="<%=require('./images/avatar.png')%>" class="author__avatar" alt="avatar">
+            </picture>
             <div class="author__container">
                 <h2 class="h2-text author__title">Об авторе</h2>
                 <p class="main-text author__text">Это блок с описаением автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь,

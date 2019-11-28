@@ -6,7 +6,7 @@
     justify-content: space-between;
     align-items: center;
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 765px) {
     .author {
         flex-wrap: wrap;
         padding: 7.5% 5%;
