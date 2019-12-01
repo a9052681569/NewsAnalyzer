@@ -1,5 +1,3 @@
-@import url(./__link-img/swiper__link-img.css);
-
 @media screen and (max-width: 500px) {
     .swiper__link {
         position: absolute;

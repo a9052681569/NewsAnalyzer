@@ -1,0 +1,11 @@
+.news-card__description-container {
+    height: 194px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 1000px) {
+    .news-card__description-container {
+        height: 160px;
+    }
+}

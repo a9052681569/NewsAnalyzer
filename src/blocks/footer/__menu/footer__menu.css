@@ -1,5 +1,3 @@
-@import url(./-item/footer__menu-item.css);
-
 .footer__menu {
     display: flex;
     flex-wrap: wrap;

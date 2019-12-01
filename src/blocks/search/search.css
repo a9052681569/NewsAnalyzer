@@ -1,6 +1,13 @@
 @import url(./__info/search__info.css);
+@import url(./__info-subtitle/search__info-subtitle.css);
+@import url(./__info-title/search__info-title.css);
 @import url(./__bar/search__bar.css);
+@import url(./__bar-input/search__bar-input.css);
+@import url(./__bar-button/search__bar-button.css);
+@import url(./__bar-input-container/search__bar-input-container.css);
 @import url(./__result/search__result.css);
+@import url(./__success/search__success.css);
+
 
 .search {
     background: url(../../images/georgia-de-lotz-UsJoNxLaNo-unsplash.png) no-repeat center;

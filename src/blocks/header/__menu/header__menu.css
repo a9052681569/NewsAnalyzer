@@ -1,7 +1,3 @@
-@import url(./__menu-item/header__menu-item.css);
-@import url(./__menu-item/_black/header__menu-item_black.css);
-@import url(./__menu-item/_active/header__menu-item_active.css);
-
 .header__menu {
     display: flex;
     align-items: flex-end;

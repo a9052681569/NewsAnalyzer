@@ -1,5 +1,5 @@
 import Preloader from '../../preloader/Preloader';
-import resSuccess from './__success/searchSuccess';
+import resSuccess from '../__success/searchSuccess';
 
 const preloader = new Preloader(document.querySelector('.search__result'));
 let res = true;

@@ -1,6 +1,9 @@
 @import url(./__copyright/footer__copyright.css);
 @import url(./__menu/footer__menu.css);
 @import url(./__social/footer__social.css);
+@import url(./__social-icon/footer__social-icon.css);
+@import url(./__menu-item/footer__menu-item.css);
+
 
 .footer {
     position: relative;

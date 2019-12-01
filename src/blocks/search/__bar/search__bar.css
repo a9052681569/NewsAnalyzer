@@ -1,6 +1,3 @@
-@import url(./-button/search__bar-button.css);
-@import url(./-input-container/search__bar-input-container.css);
-
 .search__bar {
     margin-top: 64px;
     max-width: 600px;

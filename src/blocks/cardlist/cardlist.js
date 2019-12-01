@@ -1,4 +1,4 @@
-import NewsCard from './news-card/newsCard';
+import NewsCard from '../news-card/newsCard';
 
 export default class CardList {
     constructor(container, cards) {
@@ -14,8 +14,12 @@ export default class CardList {
     }
     // метод, отрисовывающий карточки
     render() {
-      if(this.cards.length > 1) {
+      if(this.cards.length > 3) {
         this.cards.splice(0, 3).forEach((options) => {
+          this.addCard(options);
+        });
+      } else if (this.cards.length > 0) {
+        this.cards.splice(0, this.cards.length).forEach((options) => {
           this.addCard(options);
         });
       }

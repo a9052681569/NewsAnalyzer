@@ -1,6 +1,3 @@
-@import url(./__header-link/section__header-link.css);
-@import url(./__header-title/section__header-title.css);
-
 .section__header {
     width: 100%;
     display: flex;
