@@ -1,0 +1,23 @@
+@import url(../../../node_modules/swiper/css/swiper.css);
+@import url(../preloader/preloader.css);
+@import url(../swiper-slide/swiper-slide.css);
+@import url(./__header/swiper__header.css);
+@import url(./__link/swiper__link.css);
+@import url(./__link-img/swiper__link-img.css);
+@import url(./__pagination/swiper__pagination.css);
+@import url(./__pagination-bullet/swiper__pagination-bullet.css);
+@import url(./__button/swiper__button.css);
+@import url(./__container/swiper__container.css);
+
+
+.swiper {
+    position: relative;
+    width: 100%;
+    background-color: #F5F6F7;
+    padding: 5% 0;
+}
+@media screen and (max-width: 500px) {
+    .swiper {
+        height: 480px;
+    }
+}

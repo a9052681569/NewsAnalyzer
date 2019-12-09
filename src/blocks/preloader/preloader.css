@@ -1,0 +1,11 @@
+@import url(./__img/preloader__img.css);
+@import url(./__subtitle/preloader__subtitle.css);
+@import url(./__title/preloader__title.css);
+
+.preloader {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+}

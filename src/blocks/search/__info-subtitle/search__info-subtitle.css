@@ -1,0 +1,12 @@
+.search__info-subtitle {
+    max-width: 550px;
+    font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+}
+@media screen and (max-width: 500px) {
+    .search__info-subtitle {
+        font-size: 20px;
+        line-height: 26px;
+    }
+}

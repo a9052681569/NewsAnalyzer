@@ -1,0 +1,6 @@
+@import url(./_loading/preloader__img_loading.css);
+@import url(./_not-found/preloader__img_not-found.css);
+
+.preloader__img {
+    margin: auto;
+}

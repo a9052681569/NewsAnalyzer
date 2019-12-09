@@ -1,0 +1,9 @@
+.swiper-slide__text {
+    overflow: hidden;
+    height: 50%;
+}
+@media screen and (max-width: 1000px) {
+    .swiper-slide__text {
+        max-height: 40%;
+    }
+}

@@ -1,0 +1,13 @@
+.swiper-pagination-bullet {
+    opacity: 1;
+    background-color: #D1D2D6;
+    margin-left: 8px;
+}
+
+.swiper-pagination-bullet:focus {
+    outline: none;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #1A1B22;
+}

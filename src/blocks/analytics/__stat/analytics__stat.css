@@ -1,0 +1,6 @@
+.analytics__stat {
+    margin-bottom: 4px;
+}
+.analytics__stat:last-of-type {
+    margin-bottom: 0;
+}

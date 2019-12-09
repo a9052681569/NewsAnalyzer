@@ -1,0 +1,33 @@
+@import url(./__about/swiper-slide__about.css);
+@import url(./__img/swiper-slide__img.css);
+@import url(./__subtitle/swiper-slide__subtitle.css);
+@import url(./__title/swiper-slide__title.css);
+@import url(./__date/swiper-slide__date.css);
+@import url(./__text/swiper-slide__text.css);
+
+.swiper-slide {
+    padding: 24px;
+    background-color: #fff;
+    border-radius: 16px;
+    width: 352px;
+    height: 240px;
+    margin-right: 16px;
+    overflow: hidden;
+}
+.swiper-slide:last-of-type {
+    margin-right: 0;
+}
+@media screen and (max-width: 1000px) {
+    .swiper-slide {
+        width: 288px;
+        height: 194px;
+        margin-right: 8px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .swiper-slide {
+        padding: 16px;
+        width: 240px;
+        height: 216px;
+    }
+}

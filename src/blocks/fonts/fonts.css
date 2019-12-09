@@ -1,0 +1,21 @@
+@import url(./h3-text/h3-text.css);
+@import url(./card-text/card-text.css);
+@import url(./main-text/main-text.css);
+@import url(./h2-text/h2-text.css);
+@import url(./bold-text/bold-text.css);
+@import url(./gray-text/gray-text.css);
+@import url(./diagram-text/diagram-text.css);
+
+@font-face {
+    src: url(../../vendor/fonts/roboto-medium-webfont.woff);
+    font-family: 'Roboto';
+    font-weight: bold; 
+}
+@font-face {
+    src: url(../../vendor/fonts/roboto-regular-webfont.woff);
+    font-family: 'Roboto';
+}
+@font-face {
+    src: url(../../vendor/fonts/robotoslab-regular-webfont.woff);
+    font-family: 'Roboto Slab';
+}

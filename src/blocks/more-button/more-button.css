@@ -1,0 +1,27 @@
+.more-button {
+    height: 64px;
+    width: 288px;
+    border-radius: 80px;
+    background-color: #fff;
+}
+
+.more-button:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+.more-button:focus {
+    opacity: 0.9;
+}
+
+@media screen and (max-width: 1000px) {
+    .more-button {
+        width: 240px;
+        height: 56px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .more-button {
+        width: 288px;
+    }
+}
+

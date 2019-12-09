@@ -1,0 +1,6 @@
+@import url(./__name/stat__name.css);
+@import url(./__value/stat__value.css);
+
+.stat {
+    display: flex;
+}

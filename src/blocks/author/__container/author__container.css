@@ -1,0 +1,25 @@
+.author__container {
+    margin-left: 56px;
+    position: relative;
+    top: -60px;
+}
+
+@media screen and (max-width: 1250px) {
+    .author__container {
+        top: 0;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .author__container {
+        margin-left: 32px;
+        top: 0;
+    }
+}
+@media screen and (max-width: 765px) {
+    .author__container {
+        margin-left: 0;
+        margin-top: 24px;
+        width: 100%;
+    }
+}

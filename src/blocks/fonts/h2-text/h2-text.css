@@ -1,0 +1,14 @@
+.h2-text {
+    font-family: 'Roboto Slab', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 46px;
+    color: #1A1B22;
+}
+
+@media screen and (max-width: 1000px) {
+    .h2-text {
+        font-size: 30px;
+        line-height: 34px;
+    }
+}
