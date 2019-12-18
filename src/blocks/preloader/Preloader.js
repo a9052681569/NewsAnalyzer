@@ -17,6 +17,7 @@ export default class Preloader {
         this.container.classList.remove('hidden')
         // заменяем разметку контейнера на прелоадер, чтобы в любом случае заменить содержимое, а не вставить в поток
         this.container.textContent = '';
+        this.element.querySelector('.preloader__title').textContent = '';
         this.element.querySelector('.preloader__subtitle').textContent = 'Идет поиск новостей...';
         this.element.querySelector('.preloader__img').classList.remove('preloader__img_not-found');
         this.element.querySelector('.preloader__img').classList.add('preloader__img_loading');
@@ -28,6 +29,15 @@ export default class Preloader {
         this.container.textContent = '';
         this.element.querySelector('.preloader__title').textContent = 'Ничего не найдено';
         this.element.querySelector('.preloader__subtitle').textContent = 'К сожалению по вашему запросу ничего не найдено.';
+        this.element.querySelector('.preloader__img').classList.remove('preloader__img_loading');        
+        this.element.querySelector('.preloader__img').classList.add('preloader__img_not-found');
+        this.container.appendChild(this.element);
+    }
+    error() {
+        this.container.classList.remove('hidden')
+        this.container.textContent = '';
+        this.element.querySelector('.preloader__title').textContent = 'Во время запроса произошла ошибка.';
+        this.element.querySelector('.preloader__subtitle').textContent = 'Возможно, проблема с соединением или сервер недоступен. Подождите немного и попробуйте ещё раз.';
         this.element.querySelector('.preloader__img').classList.remove('preloader__img_loading');        
         this.element.querySelector('.preloader__img').classList.add('preloader__img_not-found');
         this.container.appendChild(this.element);

@@ -6,8 +6,9 @@ export default class NewsCard {
     }
   // верстаем карточку
     create() {
-      const newsCard = document.createElement('div');
+      const newsCard = document.createElement('a');
       newsCard.classList.add('news-card');
+      newsCard.setAttribute('target', 'blank')
       newsCard.insertAdjacentHTML('afterbegin', `<div class="news-card__image"></div>
       <div class="news-card__description">
           <p class="news-card__date main-text gray-text"></p>
@@ -17,12 +18,19 @@ export default class NewsCard {
           </div>
           <p class="news-card__source gray-text"></p>
       </div>`);
+      // переводим дату в нужный формат
+      const date = new Date(this.options.publishedAt.slice(0, 10).split('-').join(', ')).toLocaleString('ru', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+      }).slice(0, -2);
       // наполняем карточку внешним контентом
-      newsCard.querySelector(".news-card__image").style.backgroundImage = `url(${this.options.link})`;
-      newsCard.querySelector('.news-card__date').textContent = this.options.date;
+      newsCard.setAttribute('href', `${this.options.url}`);
+      newsCard.querySelector(".news-card__image").style.backgroundImage = this.options.urlToImage.match(/(png|jpe?g|svg)/) ? `url(${this.options.urlToImage})` : '';
+      newsCard.querySelector('.news-card__date').textContent = date;
       newsCard.querySelector(".news-card__title").textContent = this.options.title;
-      newsCard.querySelector(".news-card__text").textContent = this.options.text;
-      newsCard.querySelector(".news-card__source").textContent = this.options.sourse;
+      newsCard.querySelector(".news-card__text").textContent = this.options.description;
+      newsCard.querySelector(".news-card__source").textContent = this.options.source.name;
       return newsCard;
     }
 }

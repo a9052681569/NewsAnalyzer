@@ -27,22 +27,13 @@
                 <p class="search__info-subtitle">Введите в поиске любую тему и узнайте, насколько популярной она была в носотях за прошедшую неделю.</p>
                 <form class="search__bar" name="search">
                     <div class="search__bar-input-container">
-                        <input type="text" class="search__bar-input" placeholder="Введите тему новости" required>
+                        <input type="text" class="search__bar-input" name="request" placeholder="Введите тему новости" required>
                     </div>
-                    <button class="search__bar-button">Искать</button>
+                    <button class="search__bar-button" name="">Искать</button>
                 </form>
             </div>
             <div class="search__result hidden"></div>
         </section>
-        <div class="preloader section-container hidden">
-            <div class="preloader__img preloader__img_loading"></div>
-            <p class="main-text preloader__subtitle gray-text">Идет поиск новостей...</p>
-        </div>
-        <div class="preloader section-container hidden">
-            <div class="preloader__img preloader__img_not-found"></div>
-            <h3 class="h3-text preloader__title">Ничего не найдено</h3>
-            <p class="main-text preloader__subtitle gray-text">К сожалению по вашему запросу ничего не найдено.</p>
-        </div>
         <section class="author section-container">
             <picture>
                 <source srcset="<%=require('./images/fb.png')%>" media="(max-width: 400px)">
