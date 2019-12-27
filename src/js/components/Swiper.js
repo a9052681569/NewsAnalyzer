@@ -1,13 +1,14 @@
 import { Swiper, Navigation, Pagination } from 'swiper/js/swiper.esm.js';
-import Api from '../api/api';
-import Slide from '../swiper-slide/swiper-slide';
+import GithubApi from '../modules/GithubApi';
+import Slide from './SwiperSlide';
+import Preloader from './preloader';
 
 export default class Slider {
     constructor(container) {
         this.container = container;
     }
     // создает разметку слайдера
-    create() {
+    _create() {
         const swiperSection = document.createElement('section');
         swiperSection.classList.add('swiper', 'section');
         swiperSection.insertAdjacentHTML('afterbegin', `<div class="swiper__header section__header section-container">
@@ -28,11 +29,11 @@ export default class Slider {
         return swiperSection;
     }
     // вставляет разметку слайдера в указанный контейнер 
-    render() {
-        this.container.appendChild(this.create())
+    _render() {
+        this.container.appendChild(this._create())
     }
     // определяет настройки слайдера
-    settings() {
+    _settings() {
         Swiper.use([Navigation, Pagination]);
         this.slider = new Swiper('.swiper__container', {
             pagination: {
@@ -49,22 +50,26 @@ export default class Slider {
         });
     }
     // запрашивает коммиты с гитхаба и подгружает их в виде слайдов
-    getSlides() {
-        new Api(document.querySelector('.swiper__container')).commitsRequest()
+    _getSlides() {
+        GithubApi.commitsRequest()
         .then((commits) => {
             commits.forEach((options) => {
-                this.slider.appendSlide(`${new Slide(options).create().outerHTML}`)
+                this.slider.appendSlide(Slide.getSlide(options))
             })
-        }) 
+        })
+        .catch((err) => {
+            console.log(err)
+            Preloader.error(document.querySelector('.swiper__container'));
+        })
     }
     // инициирует работу слайдера
     init() {
         // отрисовываем разметку
-        this.render();
+        this._render();
         // применяем настройки слайдера
-        this.settings()
+        this._settings()
         // отрисовываем слайды
-        this.getSlides()
+        this._getSlides()
     }
 }
 

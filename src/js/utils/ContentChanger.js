@@ -9,15 +9,13 @@ export default class ContentChanger {
     }
     // метод ищет в заголовке каждого элемента передаваемого массива искомое значение, 
     // возвращает кол-во совпадений
-    valueInTitles() {
+    _getValueInTitles() {
         return this.arr.reduce((sum, item) => {
-            if (item.title.includes(this.value)) {
-                sum += 1;
-            }
+            item.title.includes(this.value) ? sum += 1 : ''
             return sum
         }, 0)
     }
     showValueInTitles() {
-        this.el.textContent = `${this.valueInTitles()}`
+        this.el.textContent = `${this._getValueInTitles()}`
     }
 }

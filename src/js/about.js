@@ -1,4 +1,4 @@
-import Slider from '../blocks/swiper/swiper';
+import Slider from './components/Swiper';
 
 
 

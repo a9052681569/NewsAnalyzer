@@ -6,6 +6,10 @@
     line-height: 22px;
 }
 
+.search__bar-input:invalid {
+    box-shadow: none;
+}
+
 .search__bar-input::-webkit-input-placeholder {
     font-family: 'Roboto';
     font-size: 16px;

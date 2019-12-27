@@ -1,13 +1,13 @@
-import {ChartList} from '../blocks/chart-list/chartList';
-import ContentChanger from '../blocks/contentChanger/contentChanger';
-import DiagramDate from '../blocks/diagram/__date/diagramDate';
+import ChartList from './components/ChartList';
+import ContentChanger from './utils/ContentChanger';
+import DiagramDate from './utils/DiagramDate';
 
 import '../css/analytics.css';
 
 // проставляем даты в диаграмме
 new DiagramDate(document.querySelectorAll('.diagram__date')).showDates();
 // заставляем диаграмму работать
-new ChartList(document.querySelectorAll('.chart-list__cell-value'));
+new ChartList(document.querySelectorAll('.chart-list__cell-value')).render();
 // меняем заголовок на содержание запроса
 new ContentChanger(document.querySelector('.analytics__title'), `Вы спросили: «${localStorage.getItem('searchValue')}»`).showValue();
 // указываем общее кол-во новостей по этому запросу

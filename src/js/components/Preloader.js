@@ -1,10 +1,8 @@
-export default class Preloader {
-    // контейнер - это секция, в которую мы вставим прелоадер
-    constructor(container) {
-        this.container = container;
-        this.element = this.create();
+class Preloader {
+    constructor() {
+        this.element = this._create();
     }
-    create() {
+    _create() {
         const preloader = document.createElement('div');
         preloader.classList.add('preloader', 'section-container');
         preloader.insertAdjacentHTML('afterbegin', `<div class="preloader__img"></div>
@@ -13,33 +11,35 @@ export default class Preloader {
         return preloader;
     }
     // метод отображает иконку загрузки данных
-    preload() {
-        this.container.classList.remove('hidden')
+    preload(container) {
+        container.classList.remove('hidden')
         // заменяем разметку контейнера на прелоадер, чтобы в любом случае заменить содержимое, а не вставить в поток
-        this.container.textContent = '';
+        container.textContent = '';
         this.element.querySelector('.preloader__title').textContent = '';
         this.element.querySelector('.preloader__subtitle').textContent = 'Идет поиск новостей...';
         this.element.querySelector('.preloader__img').classList.remove('preloader__img_not-found');
         this.element.querySelector('.preloader__img').classList.add('preloader__img_loading');
-        this.container.appendChild(this.element);
+        container.appendChild(this.element);
     }
     // метод отображает информацию о том что результатов поиска нет.
-    notFound() {
-        this.container.classList.remove('hidden')
-        this.container.textContent = '';
+    notFound(container) {
+        container.classList.remove('hidden')
+        container.textContent = '';
         this.element.querySelector('.preloader__title').textContent = 'Ничего не найдено';
         this.element.querySelector('.preloader__subtitle').textContent = 'К сожалению по вашему запросу ничего не найдено.';
         this.element.querySelector('.preloader__img').classList.remove('preloader__img_loading');        
         this.element.querySelector('.preloader__img').classList.add('preloader__img_not-found');
-        this.container.appendChild(this.element);
+        container.appendChild(this.element);
     }
-    error() {
-        this.container.classList.remove('hidden')
-        this.container.textContent = '';
+    error(container) {
+        container.classList.remove('hidden')
+        container.textContent = '';
         this.element.querySelector('.preloader__title').textContent = 'Во время запроса произошла ошибка.';
         this.element.querySelector('.preloader__subtitle').textContent = 'Возможно, проблема с соединением или сервер недоступен. Подождите немного и попробуйте ещё раз.';
         this.element.querySelector('.preloader__img').classList.remove('preloader__img_loading');        
         this.element.querySelector('.preloader__img').classList.add('preloader__img_not-found');
-        this.container.appendChild(this.element);
+        container.appendChild(this.element);
     }
 }
+
+export default new Preloader();

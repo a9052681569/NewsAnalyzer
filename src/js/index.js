@@ -1,6 +1,11 @@
-import Search from '../blocks/search/search';
+import Search from './components/Search';
+import {searchTimeRange, cardsPerClick} from './constants/constants'
 
 import '../css/style.css';
 
-
-new Search(document.forms.search, document.forms.search.elements.request);
+new Search(document.querySelector('.search__bar'),
+  document.querySelector('.search__bar-input'),
+  document.querySelector('.search__result'),
+  document.querySelector('.search__bar-button'),
+  searchTimeRange)
+  .showLastRequest(cardsPerClick)
