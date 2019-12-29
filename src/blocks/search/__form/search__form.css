@@ -1,4 +1,4 @@
-.search__bar {
+.search__form {
     margin-top: 64px;
     max-width: 600px;
     border-radius: 100px;
@@ -10,12 +10,12 @@
 }
 
 @media screen and (max-width: 1000px) {
-    .search__bar {
+    .search__form {
         margin-top: 24px;
     }
 }
 @media screen and (max-width: 500px) {
-    .search__bar {
+    .search__form {
         background-color: transparent;
         margin-top: 64px;
         flex-wrap: wrap;

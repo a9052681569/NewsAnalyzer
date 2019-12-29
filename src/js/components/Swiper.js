@@ -1,11 +1,11 @@
 import { Swiper, Navigation, Pagination } from 'swiper/js/swiper.esm.js';
-import GithubApi from '../modules/GithubApi';
-import Slide from './SwiperSlide';
-import Preloader from './preloader';
 
-export default class Slider {
-    constructor(container) {
+export default class swiper {
+    constructor(container, githubApi, slide, preloader) {
         this.container = container;
+        this.githubApi = githubApi;
+        this.slide = slide
+        this.preloader = preloader
     }
     // создает разметку слайдера
     _create() {
@@ -32,10 +32,10 @@ export default class Slider {
     _render() {
         this.container.appendChild(this._create())
     }
-    // определяет настройки слайдера
+    // определяет настройки плагина
     _settings() {
         Swiper.use([Navigation, Pagination]);
-        this.slider = new Swiper('.swiper__container', {
+        this.swiper = new Swiper('.swiper__container', {
             pagination: {
               el: '.swiper__pagination',
               clickable: true
@@ -51,15 +51,15 @@ export default class Slider {
     }
     // запрашивает коммиты с гитхаба и подгружает их в виде слайдов
     _getSlides() {
-        GithubApi.commitsRequest()
+        this.githubApi.commitsRequest()
         .then((commits) => {
             commits.forEach((options) => {
-                this.slider.appendSlide(Slide.getSlide(options))
+                this.swiper.appendSlide(this.slide.getSlide(options))
             })
         })
         .catch((err) => {
             console.log(err)
-            Preloader.error(document.querySelector('.swiper__container'));
+            this.preloader.error(document.querySelector('.swiper__container'));
         })
     }
     // инициирует работу слайдера

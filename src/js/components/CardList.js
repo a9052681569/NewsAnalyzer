@@ -1,15 +1,17 @@
-import NewsCard from './NewsCard';
-
-class CardList {
+export default class CardList {
+    constructor(cardsPerClick, newsCard) {
+      this.cardsPerClick = cardsPerClick
+      this.newsCard = newsCard
+    }
     // метод добавления карточек на страницу
     _addCard(options) {
-      const cardElement = NewsCard.getCard(options);
+      const cardElement = this.newsCard.getCard(options);
       this.container.appendChild(cardElement);
     }
     // метод, отрисовывающий карточки из массива
-    render(cardsPerClick) {
-      if(this.cards.length > cardsPerClick) {
-        this.cards.splice(0, cardsPerClick).forEach((options) => {
+    render() {
+      if(this.cards.length > this.cardsPerClick) {
+        this.cards.splice(0, this.cardsPerClick).forEach((options) => {
           this._addCard(options);
         });
       } else if (this.cards.length > 0) {
@@ -23,5 +25,3 @@ class CardList {
       this.cards = cards;
     }
 }
-
-export default new CardList()

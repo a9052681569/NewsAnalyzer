@@ -1,4 +1,4 @@
-class Preloader {
+export default class Preloader {
     constructor() {
         this.element = this._create();
     }
@@ -42,4 +42,3 @@ class Preloader {
     }
 }
 
-export default new Preloader();
