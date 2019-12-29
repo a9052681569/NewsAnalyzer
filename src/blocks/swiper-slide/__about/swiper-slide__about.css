@@ -1,13 +1,12 @@
 .swiper-slide__about {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 64px auto;
     grid-template-rows: auto auto;
     padding: 16px 0;
     column-gap: 16px;
 }
 @media screen and (max-width: 1000px) {
     .swiper-slide__about {
-        grid-template-columns: auto auto;
         column-gap: 12px;
     }
 }
