@@ -1,4 +1,4 @@
-class SwiperSlide {
+export default class SwiperSlide {
     // верстаем карточку
     _create() {
       const slide = document.createElement('a');
@@ -29,5 +29,3 @@ class SwiperSlide {
       return slide;
     }
 }
-
-export default new SwiperSlide()

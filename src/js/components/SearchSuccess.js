@@ -1,7 +1,9 @@
-import CardList from './cardList';
-
-class Success {
-    initialRender(cards, container, cardsPerClick) {
+export default class SearchSuccess {
+    constructor(cardList) {
+        this._appendRender = this._appendRender.bind(this)
+        this.cardList = cardList
+    }
+    initialRender(cards, container) {
         // делаем результаты поиска видимыми
         container.classList.remove('hidden');
         // при повторном поиске сначала удаляем старый слушатель, а потом отрисовываем новую разметку
@@ -20,22 +22,19 @@ class Success {
         <button class="more-button main-text">Показать еще</button>
         </div>`)
         // после отрисовки связываем разметку с классом карточек
-        CardList.takeProps(container.querySelector('.cardlist'), cards)
-        CardList.render(cardsPerClick)
+        this.cardList.takeProps(container.querySelector('.cardlist'), cards)
+        this.cardList.render()
         
         this.moreButton = container.querySelector('.more-button')
-        this.moreButton.cardsPerClick = cardsPerClick;
+        
         // после отрисовки привязываем обработчик клика кнопке
         this.moreButton.addEventListener('click', this._appendRender)
     }
-    _appendRender() {
-        CardList.render(this.cardsPerClick);
+    _appendRender(event) {
+        this.cardList.render();
         // прячем кнопку если больше нет карточек
-        if (CardList.cards.length <= 0) {
-            this.classList.add('hidden')
+        if (this.cardList.cards.length <= 0) {
+            event.target.classList.add('hidden')
         }
     }
-
 }
-
-export default new Success()

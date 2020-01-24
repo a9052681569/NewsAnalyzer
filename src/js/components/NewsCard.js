@@ -1,4 +1,4 @@
-class NewsCard {
+export default class NewsCard {
   // верстаем карточку
     _create() {
       const newsCard = document.createElement('a');
@@ -33,5 +33,3 @@ class NewsCard {
       return card;
     }
 }
-
-export default new NewsCard()
